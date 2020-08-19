@@ -1,0 +1,95 @@
+.main-block_product {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .block_product {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 66px 0;
+
+    .block_product-product {
+      width: 320px;
+      height: 480px;
+      font-family: "TrebuchetMS";
+      border-radius: 12px;    
+      background-color: inherit;    
+      background-size: 100%;
+      padding: 23px 0 0 0;
+      margin: 0 40px 15px; 
+      
+      .product-title {
+        font-family: inherit;
+        font-size: 16px;      
+        color: #666666;
+        margin: 0 0 10px 49px;
+      }
+  
+      .product-brend {
+        font-family: "TrebuchetMS-Bold";
+        font-size: 48px;
+        color: #000000;      
+        margin: 0 0 4px 47px;
+      }
+  
+      .product-taste {
+        font-family: "TrebuchetMS-Bold";
+        font-size: 24px;
+        color: #000000;      
+        margin: 0 0 16px 48px;
+      }
+  
+      .product-bonus {
+        display: block;
+        width: 127px;
+        font-family: "TrebuchetMS";
+        color: #666666;
+        font-size: 14px;      
+        margin: 0 0 0 49px;
+        padding: 0 0 0 0;
+        line-height: 1.2;
+      } 
+  
+      &--unactive {
+        background-image: url(../../img/Photo.png);
+      }
+  
+      &--active {
+        background-image: url(../../img/Photo2.png);
+      }
+  
+      &--disabled {
+        background-image: url(../../img/Photo3.png);  
+        
+        .product-title,
+        .product-brend,
+        .product-taste,
+        .product-bonus {
+          color: rgba(179, 179, 179, .5);       
+        }        
+      }       
+    }
+
+    .block_product-post {
+      display: inline;
+      font-family: "TrebuchetMS";
+      font-size: 13px;
+      color: #ffffff;
+      text-align: center;      
+      text-shadow: 0px 1px 0 #000000;
+
+      &--disabled {
+        color: #ffff66;
+      }
+
+      .block_product-post_link {
+        color: #1698d9;
+        text-decoration: none;
+        border-bottom: 1px dashed #1698d9;
+      }
+    }
+  }
+
+  
+}
