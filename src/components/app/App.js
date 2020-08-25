@@ -35,13 +35,13 @@ export default class App extends Component {
   }
 
   clickProduct = (id) => {
-    this.setState(({productsData}) => {
+    this.setState(({ productsData }) => {
     const newProductsData = productsData.map(el =>{
       if (el.id === id) el.active = !el.active;
-      return el
+      return el;
     });
 
-    return {productsData: newProductsData}    
+    return { productsData: newProductsData }    
     });
 
     
@@ -51,10 +51,11 @@ export default class App extends Component {
     const { productsData } = this.state;
     return (
       <div className = 'main'>
-        <h1 className="main-title">Ты сегодня покормил кота?</h1>
+        <h1 className = "main-title">Ты сегодня покормил кота?</h1>
         <Product
           product = { productsData }
-          click = { this.clickProduct }/>
+          clickProduct = { this.clickProduct }
+        />
       </div>
     );
   }
