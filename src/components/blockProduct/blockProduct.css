@@ -1,0 +1,175 @@
+.main-block_product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-block_product .block_product {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 66px 0;
+}
+.main-block_product .block_product .block_product-product {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 320px;
+  height: 480px;
+  font-family: "TrebuchetMS";
+  border-radius: 12px;
+  background-color: inherit;
+  background-size: 100%;
+  padding: 23px 0 0 0;
+  margin: 0 40px 15px;
+  cursor: pointer;
+}
+.main-block_product .block_product .block_product-product .product-block_title {
+  display: flex;
+  flex-direction: column;
+}
+.main-block_product .block_product .block_product-product .product-block_title .block_title-title,
+.main-block_product .block_product .block_product-product .product-block_title .block_title-title_cancel {
+  font-family: inherit;
+  font-size: 16px;
+  color: #666666;
+  margin: 0 0 10px 49px;
+}
+.main-block_product .block_product .block_product-product .product-block_title .block_title-title_cancel {
+  color: #e62e7a;
+  display: none;
+}
+.main-block_product .block_product .block_product-product .product-brend {
+  font-family: "TrebuchetMS-Bold";
+  font-size: 48px;
+  color: #000000;
+  margin: 0 0 4px 47px;
+}
+.main-block_product .block_product .block_product-product .product-taste {
+  font-family: "TrebuchetMS-Bold";
+  font-size: 24px;
+  color: #000000;
+  margin: 0 0 16px 48px;
+}
+.main-block_product .block_product .block_product-product .product-bonus {
+  display: block;
+  width: 127px;
+  font-family: "TrebuchetMS";
+  color: #666666;
+  font-size: 14px;
+  margin: 0 0 0 49px;
+  padding: 0 0 0 0;
+  line-height: 1.2;
+}
+.main-block_product .block_product .block_product-product .product-weight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "TrebuchetMS";
+  font-size: 42px;
+  color: #ffffff;
+  position: absolute;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  bottom: 15px;
+  right: 16px;
+}
+.main-block_product .block_product .block_product-product .product-weight .product-weight_unit {
+  font-size: 21px;
+}
+.main-block_product .block_product .block_product-block_post {
+  display: flex;
+  flex-direction: column;
+}
+.main-block_product .block_product .block_product-block_post .block_post-post_unactive,
+.main-block_product .block_product .block_product-block_post .block_post-post_active,
+.main-block_product .block_product .block_product-block_post .block_post-post_disabled {
+  font-family: "TrebuchetMS";
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0px 1px 0 #000000;
+}
+.main-block_product .block_product .block_product-block_post .block_post-post_unactive .block_product-post_link,
+.main-block_product .block_product .block_product-block_post .block_post-post_active .block_product-post_link,
+.main-block_product .block_product .block_product-block_post .block_post-post_disabled .block_product-post_link {
+  color: #1698d9;
+  text-decoration: none;
+  border-bottom: 1px dashed #1698d9;
+}
+.main-block_product .block_product .block_product-block_post .block_post-post_disabled {
+  color: #ffff66;
+}
+.main-block_product .block_product--unactive .block_product-product {
+  background-image: url(../../img/cat_unactive.png);
+}
+.main-block_product .block_product--unactive .block_product-product:hover {
+  background-image: url(../../img/cat_unactive_hover.png);
+}
+.main-block_product .block_product--unactive .block_product-product:hover .product-weight {
+  background: #2ea8e6;
+}
+.main-block_product .block_product--unactive .block_product-product .product-weight {
+  background: #1698d9;
+}
+.main-block_product .block_product--unactive .block_post-post_unactive {
+  display: inline;
+}
+.main-block_product .block_product--unactive .block_post-post_active {
+  display: none;
+}
+.main-block_product .block_product--unactive .block_post-post_disabled {
+  display: none;
+}
+.main-block_product .block_product--active .block_product-product {
+  background-image: url(../../img/cat_active.png);
+}
+.main-block_product .block_product--active .block_product-product:hover {
+  background-image: url(../../img/cat_active_hover.png);
+}
+.main-block_product .block_product--active .block_product-product:hover .product-block_title .block_title-title {
+  display: none;
+}
+.main-block_product .block_product--active .block_product-product:hover .product-block_title .block_title-title_cancel {
+  display: block;
+}
+.main-block_product .block_product--active .block_product-product:hover .product-weight {
+  background: #e62e7a;
+}
+.main-block_product .block_product--active .block_product-product .product-weight {
+  background: #d91667;
+}
+.main-block_product .block_product--active .block_post-post_unactive {
+  display: none;
+}
+.main-block_product .block_product--active .block_post-post_active {
+  display: inline;
+}
+.main-block_product .block_product--active .block_post-post_disabled {
+  display: none;
+}
+.main-block_product .block_product--disabled .block_product-product {
+  background-image: url(../../img/cat_disabled.png);
+  cursor: default;
+}
+.main-block_product .block_product--disabled .block_product-product .product-block_title .block_title-title {
+  color: rgba(179, 179, 179, 0.5);
+}
+.main-block_product .block_product--disabled .block_product-product .product-brend,
+.main-block_product .block_product--disabled .block_product-product .product-taste,
+.main-block_product .block_product--disabled .block_product-product .product-bonus {
+  color: rgba(179, 179, 179, 0.5);
+}
+.main-block_product .block_product--disabled .block_product-product .product-weight {
+  background: #b3b3b3;
+}
+.main-block_product .block_product--disabled .block_post-post_unactive {
+  display: none;
+}
+.main-block_product .block_product--disabled .block_post-post_active {
+  display: none;
+}
+.main-block_product .block_product--disabled .block_post-post_disabled {
+  display: inline;
+}

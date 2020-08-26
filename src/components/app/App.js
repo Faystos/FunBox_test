@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './main.css';
 
-import Product from '../product/Product';
+import BlockProduct from '../blockProduct/BlockProduct';
 
 export default class App extends Component {
 
@@ -11,7 +11,8 @@ export default class App extends Component {
         id: 1,
         taste: 'с фуа-гра',
         proposal: '10 порций мышь\u00A0в\u00A0подарок',
-        weight: '0.5кг',
+        description: 'Печень утки разварная с артишоками.',
+        weight: '0,5',
         active: false,
         disabled: false
       },
@@ -19,7 +20,8 @@ export default class App extends Component {
         id: 2,
         taste: 'с рыбой',
         proposal: '40 порций 2\u00A0мыши\u00A0в подарок',
-        weight: '2кг',
+        description: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
+        weight: '2',
         active: true,
         disabled: false
       },
@@ -27,7 +29,8 @@ export default class App extends Component {
         id: 3,
         taste: 'с курой',
         proposal: '100 порций 5\u00A0мышей в подарок заказчик доволен',
-        weight: '5кг',
+        description: 'Филе из цыплят с трюфелями в бульоне.',
+        weight: '5',
         active: false,
         disabled: true
       }
@@ -42,9 +45,7 @@ export default class App extends Component {
     });
 
     return { productsData: newProductsData }    
-    });
-
-    
+    });    
   }
 
   render() {
@@ -52,7 +53,7 @@ export default class App extends Component {
     return (
       <div className = 'main'>
         <h1 className = "main-title">Ты сегодня покормил кота?</h1>
-        <Product
+        <BlockProduct
           product = { productsData }
           clickProduct = { this.clickProduct }
         />
