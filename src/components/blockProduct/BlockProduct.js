@@ -11,7 +11,12 @@ const BlockProduct = ({ product, clickProduct }) => {
     if (disabled) nameClassActive = 'block_product--disabled';
 
     const onHedlerProduct = (evt) => {
-      evt.target.parentNode.addEventListener('mouseleave', hendlerMouseleave);
+      const target = evt.target;
+      const targetParentNode = evt.target.parentNode;
+      if (target.classList.contains('block_product-product') ||
+          targetParentNode.classList.contains('block_product-product')) {
+            target.addEventListener('mouseleave', hendlerMouseleave);
+      }
       
       function hendlerMouseleave(e) {
         clickProduct(id);
@@ -32,6 +37,8 @@ const BlockProduct = ({ product, clickProduct }) => {
         <BlockPost 
           description = { description }
           taste = { taste }
+          clickProduct = { clickProduct }
+          id = { id }
         />        
       </div>
     );
