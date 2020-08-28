@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/FunBox_test/static/css/main.d4b75b12.chunk.css",
+    "main.js": "/FunBox_test/static/js/main.4f1db347.chunk.js",
+    "main.js.map": "/FunBox_test/static/js/main.4f1db347.chunk.js.map",
+    "runtime-main.js": "/FunBox_test/static/js/runtime-main.96d3ac3c.js",
+    "runtime-main.js.map": "/FunBox_test/static/js/runtime-main.96d3ac3c.js.map",
+    "static/js/2.cf4aa470.chunk.js": "/FunBox_test/static/js/2.cf4aa470.chunk.js",
+    "static/js/2.cf4aa470.chunk.js.map": "/FunBox_test/static/js/2.cf4aa470.chunk.js.map",
+    "index.html": "/FunBox_test/index.html",
+    "precache-manifest.d588c699a3fec9fa272c8a4e7393a4c6.js": "/FunBox_test/precache-manifest.d588c699a3fec9fa272c8a4e7393a4c6.js",
+    "service-worker.js": "/FunBox_test/service-worker.js",
+    "static/css/main.d4b75b12.chunk.css.map": "/FunBox_test/static/css/main.d4b75b12.chunk.css.map",
+    "static/js/2.cf4aa470.chunk.js.LICENSE.txt": "/FunBox_test/static/js/2.cf4aa470.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/FunBox_test/static/media/TrebuchetMS.530d3166.ttf",
+    "static/media/main.css": "/FunBox_test/static/media/Pattern.3d7e1ad7.png",
+    "static/media/blockProduct.css": "/FunBox_test/static/media/cat_unactive_hover.499c4266.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96d3ac3c.js",
+    "static/js/2.cf4aa470.chunk.js",
+    "static/css/main.d4b75b12.chunk.css",
+    "static/js/main.4f1db347.chunk.js"
+  ]
+}
