@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 html body {
-  height: 768px;
-  max-height: 100vh;
+  height: 100%;
+}
+#root {
+  min-height: 100vh;
 }
